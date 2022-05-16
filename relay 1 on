@@ -1,0 +1,11 @@
+from machine import Pin
+import time
+relay1 = Pin(5, Pin.OUT)
+while True:
+ i = input()
+ if i=='on1':
+  relay1.value(0)
+  print('RELAY MODULE NO.1 TURNED ON SUCCESSFULLY')
+ elif i=='off1':
+   relay1.value(1)
+   print('RELAY MODULE NO.1 TURNED OFF SUCCESSFULLY')
